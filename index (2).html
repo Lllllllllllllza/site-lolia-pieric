@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mariage — Lolia & Pieric — v2 citron & bleu</title>
+  <title>Mariage — Lolia & Pieric — VERSION v2</title>
   <meta name="description" content="Mariage de Lolia Soussi & Pieric Roul — 5 septembre 2026 à Amiens & Berneuil."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,67 +17,59 @@
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
+      margin: 0;
     }
-    .content-bg {
-      background-color: rgba(255,255,255,0.86);
-      backdrop-filter: blur(5px);
-    }
-    .border-italy {
-      border: 3px solid #0077B6; /* Bleu azzurro */
-      border-radius: 1rem;
-    }
-    .btn-italy {
-      background-color: #FDE047; /* Jaune citron */
-      border: 2px solid #0077B6;
-      color: #000;
-      border-radius: 1rem;
-      padding: 0.75rem 1.5rem;
-      font-weight: 600;
-      transition: all 0.2s ease-in-out;
-    }
+    .content-bg { background-color: rgba(255,255,255,0.86); backdrop-filter: blur(5px); min-height: 100vh; }
+    .border-italy { border: 3px solid #0077B6; border-radius: 1rem; }
+    .btn-italy { background-color: #FDE047; border: 2px solid #0077B6; color: #000; border-radius: 1rem; padding: .75rem 1.5rem; font-weight: 600; transition: .2s; }
     .btn-italy:hover { background-color: #fff; }
-    .badge { display:inline-block; padding:0.25rem 0.6rem; border:2px solid #0077B6; background:#FDE047; border-radius:999px; font-size:12px; font-weight:700;}
+    .badge { display:inline-block; padding:.25rem .6rem; border:2px solid #0077B6; background:#FDE047; border-radius:999px; font-size:12px; font-weight:700; }
+    .container { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
   </style>
 </head>
 <body>
-  <div class="content-bg min-h-screen">
-    <header class="sticky top-0 z-50 border-b border-italy bg-white/90">
-      <nav class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-        <span class="font-semibold">Lolia & Pieric</span>
+  <div class="content-bg">
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 border-b border-italy">
+      <nav class="container py-3 flex items-center justify-between">
+        <span class="font-semibold">Lolia &amp; Pieric</span>
         <a href="#rsvp" class="btn-italy shadow">Je confirme</a>
       </nav>
     </header>
 
-    <section id="hero" class="text-center py-16">
+    <!-- HERO -->
+    <section id="hero" class="text-center py-14 container">
       <span class="badge">VERSION v2</span>
       <h1 class="text-5xl font-bold mb-4">Lolia <span style="color:#0077B6">&amp;</span> Pieric</h1>
-      <p class="text-lg">Amiens & Berneuil — samedi 5 septembre 2026 à 13:00</p>
+      <p class="text-lg">Amiens &amp; Berneuil — samedi 5 septembre 2026 à 13:00</p>
       <div class="mt-8">
         <a href="#rsvp" class="btn-italy">Confirmer ma présence</a>
       </div>
     </section>
 
-    <section id="details" class="max-w-5xl mx-auto px-4 py-12">
+    <!-- DETAILS -->
+    <section id="details" class="container py-10">
       <h2 class="text-3xl font-semibold mb-6 text-center">Détails</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <div class="p-6 bg-white border-italy shadow">
           <h3 class="text-lg font-semibold">Cérémonie — Mairie d'Amiens</h3>
           <p>7 Rue de la Malmaison, 80000 Amiens</p>
           <p>Heure : 13:00</p>
-          <a href="https://www.google.com/maps?q=7+Rue+de+la+Malmaison,+80000+Amiens" class="underline text-blue-700" target="_blank">Voir sur Google Maps</a>
+          <a href="https://www.google.com/maps?q=7+Rue+de+la+Malmaison,+80000+Amiens" class="underline text-blue-700" target="_blank" rel="noreferrer">Voir sur Google Maps</a>
         </div>
         <div class="p-6 bg-white border-italy shadow">
           <h3 class="text-lg font-semibold">Réception — Salle communale de Berneuil</h3>
           <p>80620 Berneuil</p>
           <p>Heure : 16:00</p>
-          <a href="https://www.google.com/maps?q=Salle+communale,+80620+Berneuil" class="underline text-blue-700" target="_blank">Voir sur Google Maps</a>
+          <a href="https://www.google.com/maps?q=Salle+communale,+80620+Berneuil" class="underline text-blue-700" target="_blank" rel="noreferrer">Voir sur Google Maps</a>
         </div>
       </div>
     </section>
 
-    <section id="rsvp" class="max-w-3xl mx-auto px-4 py-12">
+    <!-- RSVP -->
+    <section id="rsvp" class="container py-10">
       <h2 class="text-3xl font-semibold mb-6 text-center">Confirmation de présence</h2>
-      <form onsubmit="alert('Le formulaire sera activé plus tard 😊'); return false;" class="p-6 bg-white border-italy shadow">
+      <form onsubmit="alert('Le formulaire sera activé plus tard 😊'); return false;" class="p-6 bg-white border-italy shadow max-w-2xl mx-auto">
         <div class="grid gap-4">
           <input type="text" placeholder="Nom et prénom" class="border p-2 rounded" required>
           <input type="email" placeholder="Email" class="border p-2 rounded" required>
@@ -93,9 +85,10 @@
       </form>
     </section>
 
+    <!-- FOOTER -->
     <footer class="py-6 text-center text-sm">
       <p>Avec amour — 2026</p>
-      <p>Fait avec ❤️ par Lolia & Pieric</p>
+      <p>Fait avec ❤️ par Lolia &amp; Pieric</p>
     </footer>
   </div>
 </body>
