@@ -3,242 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mariage — Lolia &amp; Pieric — 5 septembre 2026</title>
+  <title>Mariage — Lolia & Pieric — VERSION v2</title>
   <meta name="description" content="Mariage de Lolia Soussi & Pieric Roul — 5 septembre 2026 à Amiens & Berneuil."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji";}</style>
-</head>
-<body class="bg-rose-50 text-gray-800">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/60 border-b">
-    <nav class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="#hero" class="font-semibold">Lolia &amp; Pieric</a>
-      <div class="hidden md:flex gap-5 text-sm">
-        <a href="#details" class="hover:underline">Détails</a>
-        <a href="#programme" class="hover:underline">Programme</a>
-        <a href="#rsvp" class="hover:underline">Confirmation</a>
-        <a href="#galerie" class="hover:underline">Galerie</a>
-        <a href="#infos" class="hover:underline">FAQ</a>
-      </div>
-      <a href="#rsvp" class="px-4 py-2 rounded-2xl bg-rose-500 text-white shadow hover:shadow-md">Je confirme</a>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section id="hero" class="relative overflow-hidden">
-    <div class="absolute inset-0 -z-10 opacity-20" style="background-image:url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=1600&q=60');background-size:cover;background-position:center;"></div>
-    <div class="max-w-5xl mx-auto px-4 py-20 md:py-28 text-center">
-      <h1 class="text-4xl md:text-6xl font-bold tracking-tight">Lolia <span class="text-rose-500">&amp;</span> Pieric</h1>
-      <p class="mt-4 text-lg">Amiens &amp; Berneuil — samedi 5 septembre 2026 à 13:00</p>
-
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-        <span class="inline-flex items-center rounded-full px-3 py-1 text-sm bg-white/70 backdrop-blur shadow">5 septembre 2026</span>
-        <span class="inline-flex items-center rounded-full px-3 py-1 text-sm bg-white/70 backdrop-blur shadow">13:00</span>
-        <span class="inline-flex items-center rounded-full px-3 py-1 text-sm bg-white/70 backdrop-blur shadow">Amiens &amp; Berneuil</span>
-      </div>
-
-      <!-- Countdown -->
-      <div class="mt-8 grid grid-cols-4 gap-3 max-w-xl mx-auto" id="countdown">
-        <div class="rounded-2xl bg-white/80 backdrop-blur shadow p-4 text-center">
-          <div class="text-3xl font-bold tabular-nums text-gray-900" id="d">00</div>
-          <div class="text-xs mt-1 text-gray-600">Jours</div>
-        </div>
-        <div class="rounded-2xl bg-white/80 backdrop-blur shadow p-4 text-center">
-          <div class="text-3xl font-bold tabular-nums text-gray-900" id="h">00</div>
-          <div class="text-xs mt-1 text-gray-600">Heures</div>
-        </div>
-        <div class="rounded-2xl bg-white/80 backdrop-blur shadow p-4 text-center">
-          <div class="text-3xl font-bold tabular-nums text-gray-900" id="m">00</div>
-          <div class="text-xs mt-1 text-gray-600">Minutes</div>
-        </div>
-        <div class="rounded-2xl bg-white/80 backdrop-blur shadow p-4 text-center">
-          <div class="text-3xl font-bold tabular-nums text-gray-900" id="s">00</div>
-          <div class="text-xs mt-1 text-gray-600">Secondes</div>
-        </div>
-      </div>
-
-      <div class="mt-10">
-        <a href="#rsvp" class="inline-block px-6 py-3 rounded-2xl bg-gray-900 text-white shadow hover:shadow-lg">Je confirme ma présence</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Details -->
-  <section id="details" class="scroll-mt-24 py-16">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="flex items-center gap-3 mb-6">
-        <h2 class="text-2xl md:text-3xl font-semibold">Détails</h2>
-      </div>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="rounded-2xl bg-white shadow p-6">
-          <h3 class="text-lg font-semibold">Cérémonie — Mairie d'Amiens</h3>
-          <p class="mt-2 font-medium">7 Rue de la Malmaison, 80000 Amiens</p>
-          <p class="text-sm mt-2">Heure: 13:00</p>
-          <a class="mt-3 inline-block text-rose-600 underline" href="https://www.google.com/maps?q=7+Rue+de+la+Malmaison,+80000+Amiens" target="_blank" rel="noreferrer">Voir sur Google Maps</a>
-          <div class="mt-4 aspect-video rounded-xl overflow-hidden bg-gray-100">
-            <iframe title="Carte cérémonie" class="w-full h-full" loading="lazy" src="https://maps.google.com/maps?q=7%20Rue%20de%20la%20Malmaison,%2080000%20Amiens&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-          </div>
-        </div>
-        <div class="rounded-2xl bg-white shadow p-6">
-          <h3 class="text-lg font-semibold">Réception — Salle communale de Berneuil</h3>
-          <p class="mt-2 font-medium">80620 Berneuil</p>
-          <p class="text-sm mt-2">Heure: 16:00</p>
-          <a class="mt-3 inline-block text-rose-600 underline" href="https://www.google.com/maps?q=Salle+communale,+80620+Berneuil" target="_blank" rel="noreferrer">Voir sur Google Maps</a>
-          <div class="mt-4 aspect-video rounded-xl overflow-hidden bg-gray-100">
-            <iframe title="Carte réception" class="w-full h-full" loading="lazy" src="https://maps.google.com/maps?q=Salle%20communale,%2080620%20Berneuil&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Programme -->
-  <section id="programme" class="scroll-mt-24 py-16">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="flex items-center gap-3 mb-6">
-        <h2 class="text-2xl md:text-3xl font-semibold">Programme</h2>
-      </div>
-      <ol class="relative border-s-2 border-rose-100 ps-6">
-        <li class="mb-6">
-          <div class="absolute -start-3 mt-1 h-6 w-6 rounded-full bg-rose-500 shadow"></div>
-          <p class="text-sm text-gray-600">13:00</p>
-          <p class="font-medium">Cérémonie à la Mairie d'Amiens</p>
-        </li>
-        <li class="mb-6">
-          <div class="absolute -start-3 mt-1 h-6 w-6 rounded-full bg-rose-500 shadow"></div>
-          <p class="text-sm text-gray-600">16:00</p>
-          <p class="font-medium">Réception à la Salle communale de Berneuil</p>
-        </li>
-        <li class="mb-6">
-          <div class="absolute -start-3 mt-1 h-6 w-6 rounded-full bg-rose-500 shadow"></div>
-          <p class="text-sm text-gray-600">16:30</p>
-          <p class="font-medium">Photos &amp; vin d'honneur</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- RSVP -->
-  <section id="rsvp" class="scroll-mt-24 py-16">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="flex items-center gap-3 mb-6">
-        <h2 class="text-2xl md:text-3xl font-semibold">Confirmation de présence</h2>
-      </div>
-      <p class="mb-4 text-sm text-gray-700">RSVP signifie <em>Répondez s'il vous plaît</em>. Ici, dites-nous si vous venez, le nombre d'accompagnants et vos éventuels régimes/allergies.</p>
-      <div class="grid md:grid-cols-2 gap-6 items-start">
-        <form action="#" method="POST" class="rounded-2xl bg-white shadow p-6">
-          <div class="grid gap-4">
-            <div>
-              <label class="text-sm">Nom et prénom</label>
-              <input name="name" required class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="Votre nom"/>
-            </div>
-            <div>
-              <label class="text-sm">Email</label>
-              <input name="email" type="email" required class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="vous@exemple.com"/>
-            </div>
-            <div>
-              <label class="text-sm">Présence</label>
-              <select name="presence" class="mt-1 w-full rounded-xl border px-3 py-2">
-                <option>Je serai présent·e</option>
-                <option>Je ne pourrai pas venir</option>
-              </select>
-            </div>
-            <div>
-              <label class="text-sm">Nombre d'accompagnants</label>
-              <input name="guests" type="number" min="0" value="0" class="mt-1 w-full rounded-xl border px-3 py-2"/>
-            </div>
-            <div>
-              <label class="text-sm">Allergies / Régimes</label>
-              <input name="diet" class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="ex: végétarien, sans gluten..."/>
-            </div>
-            <div>
-              <label class="text-sm">Message</label>
-              <textarea name="message" rows="4" class="mt-1 w-full rounded-xl border px-3 py-2" placeholder="Un petit mot..."></textarea>
-            </div>
-            <button class="mt-2 px-5 py-3 rounded-2xl bg-rose-500 text-white shadow hover:shadow-md" type="submit" onclick="alert('L\'envoi des réponses n\\'est pas encore activé. Nous l\\'activerons quand vous serez prêt·e 😊'); return false;">Envoyer ma réponse</button>
-            <p class="text-xs text-gray-500">Ou écrivez-nous : <a class="underline" href="mailto:soussi.lolia@hotmail.fr">soussi.lolia@hotmail.fr</a></p>
-          </div>
-        </form>
-        <div class="space-y-6">
-          <div class="rounded-2xl bg-white shadow p-6">
-            <h3 class="text-lg font-semibold">Hébergements</h3>
-            <p class="text-sm text-gray-700 mt-2">Suggestions proches : <a class="underline text-rose-600" target="_blank" rel="noreferrer" href="https://www.airbnb.fr/s/80620--Berneuil--France/homes">Airbnb à Berneuil (80620)</a> et <a class="underline text-rose-600" target="_blank" rel="noreferrer" href="https://www.airbnb.fr/s/Amiens--France/homes">Airbnb à Amiens</a>. Pensez aussi aux hôtels d'Amiens centre.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Galerie -->
-  <section id="galerie" class="scroll-mt-24 py-16">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="flex items-center gap-3 mb-6">
-        <h2 class="text-2xl md:text-3xl font-semibold">Galerie</h2>
-      </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=800&q=60" alt="Photo" class="w-full h-44 object-cover rounded-xl shadow"/>
-        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=800&q=60" alt="Photo" class="w-full h-44 object-cover rounded-xl shadow"/>
-        <img src="https://images.unsplash.com/photo-1520975954732-35dd22fd3ac5?auto=format&fit=crop&w=800&q=60" alt="Photo" class="w-full h-44 object-cover rounded-xl shadow"/>
-        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=60" alt="Photo" class="w-full h-44 object-cover rounded-xl shadow"/>
-      </div>
-    </div>
-  </section>
-
-  <!-- Infos -->
-  <section id="infos" class="scroll-mt-24 py-16">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="flex items-center gap-3 mb-6">
-        <h2 class="text-2xl md:text-3xl font-semibold">Infos pratiques</h2>
-      </div>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="rounded-2xl bg-white shadow p-6">
-          <h3 class="font-semibold">Code vestimentaire</h3>
-          <p class="text-sm text-gray-700 mt-2">Esprit <em>à l'italienne</em> : chic, coloré, élégant. Merci d'éviter le blanc pour laisser la mariée briller ✨</p>
-        </div>
-        <div class="rounded-2xl bg-white shadow p-6">
-          <h3 class="font-semibold">Enfants</h3>
-          <p class="text-sm text-gray-700 mt-2">Les enfants sont les bienvenus. Un coin jeux sera prévu.</p>
-        </div>
-        <div class="rounded-2xl bg-white shadow p-6">
-          <h3 class="font-semibold">Transport &amp; Parking</h3>
-          <p class="text-sm text-gray-700 mt-2">Parking sur place à la mairie et à la salle communale. Des navettes pourront être organisées si besoin entre Amiens et Berneuil (à confirmer).</p>
-        </div>
-        <div class="rounded-2xl bg-white shadow p-6">
-          <h3 class="font-semibold">Hashtag</h3>
-          <p class="text-sm text-gray-700 mt-2">Partagez vos photos avec le hashtag <span class="font-mono">#LoliaPieric2026</span>.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="py-12">
-    <div class="max-w-5xl mx-auto px-4 text-center text-sm text-gray-600">
-      <p>Avec amour — 2026</p>
-      <p class="mt-1">Fait avec ❤️ par Lolia &amp; Pieric</p>
-    </div>
-  </footer>
-
-  <script>
-    // Countdown to 2026-09-05T13:00:00+02:00 (Europe/Paris)
-    const target = new Date('2026-09-05T13:00:00+02:00').getTime();
-    function tick(){
-      const now = Date.now();
-      const delta = Math.max(0, target - now);
-      const d = Math.floor(delta / (1000*60*60*24));
-      const h = Math.floor((delta / (1000*60*60)) % 24);
-      const m = Math.floor((delta / (1000*60)) % 60);
-      const s = Math.floor((delta / 1000) % 60);
-      document.getElementById('d').textContent = String(d).padStart(2,'0');
-      document.getElementById('h').textContent = String(h).padStart(2,'0');
-      document.getElementById('m').textContent = String(m).padStart(2,'0');
-      document.getElementById('s').textContent = String(s).padStart(2,'0');
+  <style>
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #000;
+      background-image: url('https://images.unsplash.com/photo-1603976163013-2fc611e3d4b1?auto=format&fit=crop&w=1600&q=60&v=2');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      margin: 0;
     }
-    tick();
-    setInterval(tick, 1000);
-  </script>
+    .content-bg { background-color: rgba(255,255,255,0.86); backdrop-filter: blur(5px); min-height: 100vh; }
+    .border-italy { border: 3px solid #0077B6; border-radius: 1rem; }
+    .btn-italy { background-color: #FDE047; border: 2px solid #0077B6; color: #000; border-radius: 1rem; padding: .75rem 1.5rem; font-weight: 600; transition: .2s; }
+    .btn-italy:hover { background-color: #fff; }
+    .badge { display:inline-block; padding:.25rem .6rem; border:2px solid #0077B6; background:#FDE047; border-radius:999px; font-size:12px; font-weight:700; }
+    .container { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
+  </style>
+</head>
+<body>
+  <div class="content-bg">
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 border-b border-italy">
+      <nav class="container py-3 flex items-center justify-between">
+        <span class="font-semibold">Lolia &amp; Pieric</span>
+        <a href="#rsvp" class="btn-italy shadow">Je confirme</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="text-center py-14 container">
+      <span class="badge">VERSION v2</span>
+      <h1 class="text-5xl font-bold mb-4">Lolia <span style="color:#0077B6">&amp;</span> Pieric</h1>
+      <p class="text-lg">Amiens &amp; Berneuil — samedi 5 septembre 2026 à 13:00</p>
+      <div class="mt-8">
+        <a href="#rsvp" class="btn-italy">Confirmer ma présence</a>
+      </div>
+    </section>
+
+    <!-- DETAILS -->
+    <section id="details" class="container py-10">
+      <h2 class="text-3xl font-semibold mb-6 text-center">Détails</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-white border-italy shadow">
+          <h3 class="text-lg font-semibold">Cérémonie — Mairie d'Amiens</h3>
+          <p>7 Rue de la Malmaison, 80000 Amiens</p>
+          <p>Heure : 13:00</p>
+          <a href="https://www.google.com/maps?q=7+Rue+de+la+Malmaison,+80000+Amiens" class="underline text-blue-700" target="_blank" rel="noreferrer">Voir sur Google Maps</a>
+        </div>
+        <div class="p-6 bg-white border-italy shadow">
+          <h3 class="text-lg font-semibold">Réception — Salle communale de Berneuil</h3>
+          <p>80620 Berneuil</p>
+          <p>Heure : 16:00</p>
+          <a href="https://www.google.com/maps?q=Salle+communale,+80620+Berneuil" class="underline text-blue-700" target="_blank" rel="noreferrer">Voir sur Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp" class="container py-10">
+      <h2 class="text-3xl font-semibold mb-6 text-center">Confirmation de présence</h2>
+      <form onsubmit="alert('Le formulaire sera activé plus tard 😊'); return false;" class="p-6 bg-white border-italy shadow max-w-2xl mx-auto">
+        <div class="grid gap-4">
+          <input type="text" placeholder="Nom et prénom" class="border p-2 rounded" required>
+          <input type="email" placeholder="Email" class="border p-2 rounded" required>
+          <select class="border p-2 rounded">
+            <option>Je serai présent·e</option>
+            <option>Je ne pourrai pas venir</option>
+          </select>
+          <input type="number" min="0" placeholder="Nombre d'accompagnants" class="border p-2 rounded">
+          <textarea placeholder="Message" rows="3" class="border p-2 rounded"></textarea>
+          <button type="submit" class="btn-italy w-full">Envoyer</button>
+        </div>
+        <p class="text-sm text-center mt-3">ou écrivez-nous : <a href="mailto:soussi.lolia@hotmail.fr" class="underline">soussi.lolia@hotmail.fr</a></p>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-6 text-center text-sm">
+      <p>Avec amour — 2026</p>
+      <p>Fait avec ❤️ par Lolia &amp; Pieric</p>
+    </footer>
+  </div>
 </body>
 </html>
