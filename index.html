@@ -1,9 +1,59 @@
+<title>Mariage — Lolia & Pieric — VERSION v3</title>
+Étapes rapides :
+1️⃣ Va dans ton dépôt GitHub → clique sur index.html
+2️⃣ Clique sur le crayon ✏️ (Edit this file)
+3️⃣ Cherche la ligne :
+
+html
+Copier le code
+<title>Mariage — Lolia & Pieric — VERSION v2</title>
+4️⃣ Change v2 → v3
+5️⃣ Descends en bas → clique sur Commit changes
+6️⃣ Attends environ 30 secondes
+7️⃣ Recharge ton site ici 👉 https://lllllllllllllza.github.io/site-lolia-pieric/?v=3
+Et fais Ctrl + Shift + R (ou Cmd + Shift + R sur Mac) pour forcer l’actualisation.
+
+🔍 Si tu vois bien “VERSION v3” dans le titre de l’onglet (et ton fond citron & bleu), c’est bon !
+Sinon, on vérifiera ensemble la config de Settings → Pages (ça se règle vite).
+
+tu veux que je te dise aussi où regarder dans Settings → Pages pour confirmer que tout est bien sur main / (root) ?
+
+
+
+
+
+
+Vous avez dit :
+je préférai l'aspect avant stp
+
+
+
+ChatGPT a dit :
+Parfait 🌸 — on peut tout à fait revenir à l’aspect d’avant (fond blanc clair, jaune citron élégant, texte noir simple, sans image de fond ni bordures bleues).
+C’est super rapide à remettre.
+
+👉 Voici les étapes selon ce que tu préfères faire :
+
+🩷 Option 1 — Le plus simple : copier-coller le code d’avant (style original)
+Tu vas remettre ton fichier index.html dans la version d’origine.
+
+Va sur ton dépôt :
+👉 https://github.com/lllllllllllllza/site-lolia-pieric
+
+Clique sur index.html → puis sur le crayon ✏️ (Edit this file).
+
+Supprime tout le contenu actuel (Ctrl +A puis Suppr).
+
+Copie/colle ce code simple et élégant (le design original jaune citron & blanc) :
+
+html
+Copier le code
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mariage — Lolia & Pieric — VERSION v3</title>
+  <title>Mariage — Lolia & Pieric — 5 septembre 2026</title>
   <meta name="description" content="Mariage de Lolia Soussi & Pieric Roul — 5 septembre 2026 à Amiens & Berneuil."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,84 +62,69 @@
   <style>
     body {
       font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background-color: #FEF9C3; /* Jaune très clair */
       color: #000;
-      background-image: url('https://images.unsplash.com/photo-1603976163013-2fc611e3d4b1?auto=format&fit=crop&w=1600&q=60&v=2');
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
       margin: 0;
     }
-    .content-bg { background-color: rgba(255,255,255,0.86); backdrop-filter: blur(5px); min-height: 100vh; }
-    .border-italy { border: 3px solid #0077B6; border-radius: 1rem; }
-    .btn-italy { background-color: #FDE047; border: 2px solid #0077B6; color: #000; border-radius: 1rem; padding: .75rem 1.5rem; font-weight: 600; transition: .2s; }
-    .btn-italy:hover { background-color: #fff; }
-    .badge { display:inline-block; padding:.25rem .6rem; border:2px solid #0077B6; background:#FDE047; border-radius:999px; font-size:12px; font-weight:700; }
-    .container { max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
+    header {
+      background-color: #FDE047; /* Jaune citron */
+    }
+    .btn {
+      background-color: #FDE047;
+      color: #000;
+      border-radius: 1rem;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      border: none;
+    }
+    .btn:hover {
+      background-color: #fff;
+      border: 1px solid #FDE047;
+    }
+    section {
+      padding: 3rem 1rem;
+    }
   </style>
 </head>
 <body>
-  <div class="content-bg">
-    <!-- HEADER -->
-    <header class="sticky top-0 z-50 bg-white/90 border-b border-italy">
-      <nav class="container py-3 flex items-center justify-between">
-        <span class="font-semibold">Lolia &amp; Pieric</span>
-        <a href="#rsvp" class="btn-italy shadow">Je confirme</a>
-      </nav>
-    </header>
+  <header class="sticky top-0 shadow">
+    <nav class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <span class="font-semibold">Lolia & Pieric</span>
+      <a href="#rsvp" class="btn">Je confirme</a>
+    </nav>
+  </header>
 
-    <!-- HERO -->
-    <section id="hero" class="text-center py-14 container">
-      <span class="badge">VERSION v2</span>
-      <h1 class="text-5xl font-bold mb-4">Lolia <span style="color:#0077B6">&amp;</span> Pieric</h1>
-      <p class="text-lg">Amiens &amp; Berneuil — samedi 5 septembre 2026 à 13:00</p>
-      <div class="mt-8">
-        <a href="#rsvp" class="btn-italy">Confirmer ma présence</a>
-      </div>
-    </section>
+  <section class="text-center">
+    <h1 class="text-5xl font-bold mb-4">Lolia & Pieric</h1>
+    <p class="text-lg">Amiens & Berneuil — samedi 5 septembre 2026 à 13:00</p>
+  </section>
 
-    <!-- DETAILS -->
-    <section id="details" class="container py-10">
-      <h2 class="text-3xl font-semibold mb-6 text-center">Détails</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="p-6 bg-white border-italy shadow">
-          <h3 class="text-lg font-semibold">Cérémonie — Mairie d'Amiens</h3>
-          <p>7 Rue de la Malmaison, 80000 Amiens</p>
-          <p>Heure : 13:00</p>
-          <a href="https://www.google.com/maps?q=7+Rue+de+la+Malmaison,+80000+Amiens" class="underline text-blue-700" target="_blank" rel="noreferrer">Voir sur Google Maps</a>
-        </div>
-        <div class="p-6 bg-white border-italy shadow">
-          <h3 class="text-lg font-semibold">Réception — Salle communale de Berneuil</h3>
-          <p>80620 Berneuil</p>
-          <p>Heure : 16:00</p>
-          <a href="https://www.google.com/maps?q=Salle+communale,+80620+Berneuil" class="underline text-blue-700" target="_blank" rel="noreferrer">Voir sur Google Maps</a>
-        </div>
-      </div>
-    </section>
+  <section id="details" class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-6">Détails</h2>
+    <p><strong>Cérémonie :</strong> Mairie d’Amiens — 7 rue de la Malmaison, à 13h00</p>
+    <p><strong>Réception :</strong> Salle communale de Berneuil — 80620 Berneuil, à 16h00</p>
+    <p><a href="https://www.google.com/maps?q=7+Rue+de+la+Malmaison,+80000+Amiens" class="underline">Voir la mairie</a> · <a href="https://www.google.com/maps?q=Salle+communale,+80620+Berneuil" class="underline">Voir la salle</a></p>
+  </section>
 
-    <!-- RSVP -->
-    <section id="rsvp" class="container py-10">
-      <h2 class="text-3xl font-semibold mb-6 text-center">Confirmation de présence</h2>
-      <form onsubmit="alert('Le formulaire sera activé plus tard 😊'); return false;" class="p-6 bg-white border-italy shadow max-w-2xl mx-auto">
-        <div class="grid gap-4">
-          <input type="text" placeholder="Nom et prénom" class="border p-2 rounded" required>
-          <input type="email" placeholder="Email" class="border p-2 rounded" required>
-          <select class="border p-2 rounded">
-            <option>Je serai présent·e</option>
-            <option>Je ne pourrai pas venir</option>
-          </select>
-          <input type="number" min="0" placeholder="Nombre d'accompagnants" class="border p-2 rounded">
-          <textarea placeholder="Message" rows="3" class="border p-2 rounded"></textarea>
-          <button type="submit" class="btn-italy w-full">Envoyer</button>
-        </div>
-        <p class="text-sm text-center mt-3">ou écrivez-nous : <a href="mailto:soussi.lolia@hotmail.fr" class="underline">soussi.lolia@hotmail.fr</a></p>
-      </form>
-    </section>
+  <section id="rsvp" class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-6">Confirmation de présence</h2>
+    <form onsubmit="alert('Le formulaire sera activé plus tard 😊'); return false;" class="space-y-3">
+      <input type="text" placeholder="Nom et prénom" class="border p-2 rounded w-full" required>
+      <input type="email" placeholder="Email" class="border p-2 rounded w-full" required>
+      <select class="border p-2 rounded w-full">
+        <option>Je serai présent·e</option>
+        <option>Je ne pourrai pas venir</option>
+      </select>
+      <input type="number" min="0" placeholder="Nombre d'accompagnants" class="border p-2 rounded w-full">
+      <textarea placeholder="Message" rows="3" class="border p-2 rounded w-full"></textarea>
+      <button type="submit" class="btn w-full">Envoyer</button>
+    </form>
+    <p class="text-sm mt-3">ou écrivez-nous : <a href="mailto:soussi.lolia@hotmail.fr" class="underline">soussi.lolia@hotmail.fr</a></p>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="py-6 text-center text-sm">
-      <p>Avec amour — 2026</p>
-      <p>Fait avec ❤️ par Lolia &amp; Pieric</p>
-    </footer>
-  </div>
+  <footer class="py-6 text-center text-sm">
+    <p>Avec amour — 2026</p>
+    <p>Fait avec ❤️ par Lolia & Pieric</p>
+  </footer>
 </body>
 </html>
